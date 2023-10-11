@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/preguntas.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navBar">
+            <div class="navBarImg">
+                <a href="" class=""><img src="/img/LogoNM.jpg" alt="LogoPágina"></a><!-- Logo  página/Home -->
+            </div>
+            <div class="navBarUl">
+                <ul>
+                    <!-- <li><a href="">Contacto</a></li> -->
+                    <li><a href="../index.html">Inicio</a></li><!-- se puede ir -->
+                    <li><a href="../information.html">Información</a></li>
+                    <li><a href="preguntas.html">Preguntas</a></li>
+                    <li><a href="../formulario.html">Registrarme</a></li>
+                </ul>
+            </div>
+    </header>
+
+    <main>
+        <section class="sobreNosotros">
+            <div>
+                <img src="../img/Index/preguntas/sobreNosotros.jpg" alt="Sobre nosotross">
+            </div>
+            <div>
+                <h1>SOBRE NOSOTROS</h1>
+                <p>¡Bienvenido a nuestra plataforma de eventos! Somos personas apasionadas por la música, el
+                    entretenimiento y la cultura. Nuestro objetivo es conectar a los amantes de los eventos con
+                    experiencias
+                    inolvidables.
+                </p>
+            </div>
+
+
+        </section>
+
+        <section class="informacion">
+            <div class="item">
+                <h2>Nuestra Historia</h2>
+                <p>Hemos crecido desde ser un proyecto pequeño hasta convertirnos en una plataforma de nacional. Nuestro
+                    equipo dedicado a trabajar incansablemente para ofrecer una amplia informacion de eventos para todos
+                    los gustos.</p>
+            </div>
+            <div class="item">
+                <h2>Nuestra mision</h2>
+                <p>Hacer que la experiencia de asistir a eventos sea fácil, emocionante y accesible para todos. Queremos
+                    inspirar y enriquecer la vida de las personas a través de la música, el arte, el deporte y la
+                    cultura.</p>
+            </div>
+            <div class="item">
+                <h2>Nuestros valores</h2>
+                <p>La pasión por el entretenimiento, lo que hacemos y nuestro compromiso a brindar experiencias
+                    excepcionales a nuestros usuarios. Valoramos la honestidad y la transparencia en todas nuestras
+                    interacciones, tanto con nuestros usuarios como entre nuestro equipo. Buscamos constantemente formas
+                    de mejorar y crecer, adoptando tecnologías innovadoras y escuchando las necesidades y sugerencias de
+                    nuestra comunidad.</p>
+            </div>
+        </section>
+        <section>
+            <h3>PREGUNTAS FRECUENTES</h3>
+            <div class="preguntas">
+                <div>
+                    <h4>entradas</h4>
+                    <ul>
+                        <li>
+                            <button onclick="desplegar('botonUno')">¿Cómo obtengo las entradas?</button>
+                            <p class="respuesta" id="botonUno">La información oficial de las entradas se puede encontrar en
+                                nuestro sitio web o en las redes sociales asociadas al evento.</p>
+                        </li>
+                        <li>
+                            <button onclick="desplegar('botonDos')">¿Se pueden retirar por boleteria?</button>
+                            <p id="botonDos" class="respuesta">La opción retiro por boleteria, queda a cargo del organizador de evento.</p>
+                        </li>
+                        <li>
+                            <button onclick="desplegar('botonTres')">¿Qué medios de pago puedo utilizar?</button>
+                            <p id="botonTres" class="respuesta">Tarjetas de créditos, débito y prepagas.</p>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>eventos</h4>
+                    <ul>
+                        <li>
+                            <button onclick="desplegar('botonCuatro')">¿Dónde busco la información oficial del
+                                evento?</button>
+                            <p id="botonCuatro" class="respuesta">La información oficial del evento se puede encontrar
+                                en nuestro sitio web o en
+                                las redes sociales asociadas al evento.</p>
+                        </li>
+                        <li>
+                            <button onclick="desplegar('botonCinco')">¿Qué pasa si un evento se supende??</button>
+                            <p id="botonCinco" class="respuesta">En caso de que un evento se suspenda, se proporcionará
+                                información actualizada
+                                sobre reprogramación o reembolso de entradas.</p>
+                        </li>
+                        <li>
+                            <button onclick="desplegar('botonSeis')">¿Qué objetos estan prohibidos?</button>
+                            <p id="botonSeis" class="respuesta">Los objetos prohibidos varían según el evento, pero
+                                generalmente incluyen elementos peligrosos o que puedan causar molestias a otros
+                                asistentes.</p>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Trasmisión y cobertura en Línea</h4>
+                    <ul>
+                        <li>
+                            <button onclick="desplegar('botonSiete')">¿Se transmitirán los eventos en vivo para aquellos
+                                que no puedan asistir en persona?</button>
+                            <p id="botonSiete" class="respuesta">La transmisión por plataformas webs quedan a cargo de los organizadores
+                            </p>
+                        </li>
+                        <li>
+                            <button onclick="desplegar('botonOcho')">¿Cómo puede acceder a la transmisión en vivo o a la
+                                cobertura en línea del evento?</button>
+                            <p id="botonOcho" class="respuesta">La informacion será compartida por redes sociales.
+                            </p>
+                        </li>
+                        <li>
+                            <button onclick="desplegar('botonNueve')">¿Hay contenido adicional disponible línea antes o
+                                después del evento?</button> 
+                            <p id="botonNueve" class="respuesta"> Siempre se comparte informacion adicional en todas las redes sociales.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
