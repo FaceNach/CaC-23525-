@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="/CSS/styleFormulario.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Document</title>
 </head>
 <body>
@@ -22,57 +24,83 @@
             </ul>
         </div>
     </nav>
-</head>
-    <div class="form_wrapper">
-        <div class="form_container">
-          <div class="title_container">
-            <h2>Sign In</h2>
-          </div>
-          <div class="row clearfix">
-            <div class="">
-              <form>
-                <div class="input_field"> <span><i aria-hidden="true" class="fa fa-envelope"></i></span>
-                  <input type="email" name="email" placeholder="Email" required />
-                </div>
-                <div class="input_field"> <span><i aria-hidden="true" class="fa fa-lock"></i></span>
-                  <input type="password" name="password" placeholder="Password" required />
-                </div>
-                <div class="input_field"> <span><i aria-hidden="true" class="fa fa-lock"></i></span>
-                  <input type="password" name="password" placeholder="Re-type Password" required />
-                </div>
-                <div class="row clearfix">
-                  <div class="col_half">
-                    <div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
-                      <input type="text" name="name" placeholder="First Name" />
-                    </div>
-                  </div>
-                  <div class="col_half">
-                    <div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
-                      <input type="text" name="name" placeholder="Last Name" required />
-                    </div>
-                  </div>
-                </div>
-                    </div>
-                    <div class="input_field select_option">
-                      <select>
-                        <option>Select a country</option>
-                        <option>Argentina</option>
-                        <option>Brasil</option>
-                        <option>Chile</option>
-                        <option>Colombia</option>
-                        <option>Ecuador</option>
-                        <option>Peru</option>
-                        <option>Uruguay</option>
-                        <option>Otro</option>
-                      </select>
-                      <div class="select_arrow"></div>
-                    </div>
-                <input class="button" type="submit" value="Register" />
-              </form>
+  </head>
+  <body>
+    <section class="d-flex justify-content-center w-100 text-light">
+      <div class="fondoFormulario">
+        <form>
+          <div class="d-flex">
+            <div class="w-100 nombre p-2">
+              <label class="form-label" for="name">Nombre</label>
+              <input placeholder="Ingrese su nombre"  class="form-control" type="text" id="name">
+            </div>
+            <div class="w-100 apellido p-2">
+              <label class="form-label" for="lastname">Apellido</label>
+              <input placeholder="Ingrese su apellido" class="form-control" type="text" id="lastname" name="lastname">
             </div>
           </div>
-        </div>
+          <div class="p-2 position-relative">
+            <span id="msgInput" class="mensaje"></span>
+            <label class="form-label" for="email">E-mail</label>
+            <input id="emailInput" placeholder="Ingrese su email" class="form-control" type="text" name="email" id="email">
+          </div>
+          <div class="p-2 position-relative">
+            <span id="msgPass" class="mensaje"></span>
+            <label class="form-label" for="password">Contraseña</label>
+            <input id="btnPassword" placeholder="Ingrese su contraseña" class="form-control" type="password" name="password" id="password">
+          </div>
+          <div class="p-2 position-relative">
+            <span id="msgInputPass" class="mensaje"></span>
+            <label class="form-label" for="ConfirPassword">Confirmar contraseña</label>
+            <input id="btnConfirPassword" placeholder="Confirme su contraseña" class="form-control" type="password" name="ConfirPassword" id="ConfirPassword">
+          </div>
+          <div class="p-2">
+            <label class="form-label" for="pais">Seleccione su país</label>
+            <select class="form-select" name="pais" id="pais">
+              <option selected>Seleccione su país</option>
+              <option value="Argentina">Argentina</option>
+              <option value="Chile">Chile</option>
+              <option value="Uruguay">Uruguay</option>
+              <option value="Paraguay">Paraguay</option>
+              <option value="Bolivia">Bolivia</option>
+              <option value="Brasil">Brasil</option>
+              <option value="Peru">Peru</option>
+              <option value="Colombia">Colombia</option>
+            </select>
+          </div>
+          <div class="d-flex justify-content-around">
+            <button class="btn">Eliminar</button>
+            <button class="btn">Enviar</button>
+            
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container2">
+          <div class="container_footer">
+              <h6>About</h6>
+              <p class="text-justify">¡Bienvenido a nuestra plataforma de eventos!
+                  Somos personas apasionadas por la música, el
+                  entretenimiento y la cultura. Nuestro objetivo es conectar a los amantes de los eventos con
+                  experiencias
+                  inolvidables.</p>
+          </div>
+
+          <div class="container_quickLinks">
+              <h6>Quick Links</h6>
+              <ul class="footer-links">
+                  <li><a href="/HTML/preguntas.html">Preguntas</a></li>
+                  <li><a href="/information.html">Información</a></li>
+                  <li><a href="/formulario.html">Registro</a></li>
+                  <li><a href="/index.html">Inicio</a></li>
+              </ul>
+          </div>
       </div>
       
+  </footer>
+  </body>
+  <script  src="./js/formulario.js"></script>
 </body>
 </html>
