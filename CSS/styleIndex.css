@@ -32,8 +32,8 @@ body
 
 .navBarImg img
 {
-    width: 300px;
-    height: 170px;
+  width: 300px;
+  height: 170px;
 }
 
 .navBarImg a 
@@ -130,6 +130,7 @@ color: #cac7ff ;
     text-align: center;
     color:#351D53;
     font-size: clamp(20px, 50px, 60px);
+    font-family: 'Poppins', sans-serif;
 }
 /* Sección bandas */
 
@@ -238,6 +239,7 @@ color: #cac7ff ;
     text-align: center;
     font-size: clamp(20px, 50px, 60px);
     color:#351D53;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Sección Próximamente */
@@ -282,6 +284,7 @@ color: #cac7ff ;
     text-align: center;
     color:#351D53;
     font-size: clamp(20px, 50px, 60px);
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Sección Footer */
@@ -405,3 +408,143 @@ color: #cac7ff ;
 {
     margin-top: 10px;
 }
+
+/* MQ */
+
+/* Pantallas pequeñas */
+
+@media (max-width: 768px) {
+    .navBar {
+      flex-direction: cro;
+    }
+  
+    .navBarImg img {
+      width: 200px;
+      height: auto;
+    }
+  
+    .navBarUl {
+      width: 100%;
+    }
+  
+    .navBarUl ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .navBarUl li a {
+      font-size: 24px;
+    }
+  
+    .sliderContenedor {
+      max-width: 100%;
+    }
+  
+    .sliderNav {
+      bottom: 0.5rem;
+    }
+
+    .seccionArtista {
+        flex-direction: column;
+      }
+    
+      .seccionArtista p {
+        order: 1;
+        width: 100%;
+        margin-bottom: 20px; /* Añadimos un espacio entre el texto y el video */
+      }
+    
+      .seccionArtista iframe {
+        order: 2;
+        width: 100%;
+        height: auto;
+      }
+    
+    
+    
+
+    .site-footer {
+        margin-top: 10px;
+      }
+    
+      .container_footer {
+        margin-left: 0;
+        width: 100%;
+      }
+    
+      .container_quickLinks {
+        margin-right: 0;
+      }
+  }
+
+  /* Pantallas medianas */
+
+ /*  @media (min-width: 769px) and (max-width: 1024px) {
+    .navBarImg img {
+      width: 250px;
+      height: auto;
+    }
+  
+    .navBarUl li a {
+      font-size: 28px;
+    }
+  
+    .seccionBandasCarta {
+      width: 250px;
+      height: 300px;
+    }
+  
+    .seccionBandasCarta img {
+      height: 100%;
+    }
+  
+    .seccionProximamenteCarta {
+      width: 250px;
+      height: 300px;
+    }
+  
+    .seccionProximamenteCarta img {
+      height: 100%;
+    }
+  } */
+
+  /* /* pantallas grandes */
+  
+  @media (min-width: 1025px) {
+    .navBar {
+      height: 100px;
+    }
+  
+    .navBarImg img {
+      width: 300px;
+      height: 170px;
+    }
+  
+    .navBarUl ul {
+      justify-content: space-evenly;
+    }
+  
+    .navBarUl li a {
+      font-size: 30px;
+    }
+  
+    .seccionBandasCarta {
+      width: 300px;
+      height: 350px;
+    }
+  
+    .seccionBandasCarta img {
+      height: 100%;
+    }
+  
+    .seccionProximamenteCarta {
+      width: 300px;
+      height: 350px;
+    }
+  
+    .seccionProximamenteCarta img {
+      height: 100%;
+    }
+  }
+   
+   
