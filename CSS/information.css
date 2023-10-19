@@ -1,5 +1,5 @@
 /*Import Google Fonts*/
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200&family=Raleway:wght@300&display=swap');
 
 body {
   margin: 0;
@@ -60,77 +60,13 @@ body {
 
 
 /* Sección Estadios */
-
-.seccionEstadios {
-  padding: 1rem;
+.seccionMapa { 
+  padding: 12px;
 }
 
-.sliderContenedor {
-  position: relative;
-  max-width: 60rem;
-  margin: 0 auto;
-}
-
-.slider {
-  display: flex;
-  aspect-ratio: 16/9;
-  overflow: hidden;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
-  border-radius: 0.5rem;
-}
-
-.slider img {
-  flex: 1 0 100%;
-  scroll-snap-align: start;
-  object-fit: cover;
-}
-
-.sliderNav {
-  display: flex;
-  column-gap: 1rem;
-  position: absolute;
-  bottom: 1.25rem;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1;
-}
-
-.sliderNav a {
-  width: 0.5rem;
-  height: 0.5rem;
-  border-radius: 500%;
-  background-color: #ffff;
-  opacity: 0.75;
-  transition: opacity ease 250ms;
-}
-
-.sliderNav a:hover {
-  opacity: 1;
-}
-
-/* Sección H3 */
-
-.seccionH3Proximamente {
-  font-size: 100px;
-  text-align: center;
-}
-
-.secionH3Estadios {
-  text-align: center;
-  color: #351d53;
-  font-size: clamp(20px, 50px, 60px);
-}
-
-/* Seccion Footer*/
-
-.footer {
-  display: grid;
-  justify-items: start;
-  background-image: linear-gradient(#351d53, #504c7e);
-  font-family: "Raleway", sans-serif;
-  color: #cac7ff;
+h3, h4, h5 {
+  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 /* Seccion Ubicacion*/
@@ -142,12 +78,113 @@ body {
   flex-wrap: wrap;
 }
 
-.seccionMapa img {
-  width: 600px;
-  height: 450px;
-  object-fit: cover;
-  margin: 10px; /* Espacio entre las imágenes */
+img {
+  height: 300px;
+  width: 400px;
 }
+
+/* Seccion Footer*/
+
+.site-footer
+{
+  font-size:15px;
+  background-image: linear-gradient(#504C7E, #351D53 );
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+
+}
+
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none;
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color: #FFFFFF;
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.container2
+{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.container_footer
+{
+    width: 40%;
+    margin-left: 100px;
+}
+
+.container_footer h6
+{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.container_footer p 
+{
+    justify-content: center;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.container_quickLinks 
+{
+    margin-right: 200px;
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.container_quickLinks h6
+{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.container_quickLinks li
+{
+    margin-top: 10px;
+}
+
+
 
 /*media queries - Responsive web*/
 
@@ -196,7 +233,7 @@ body {
   }
 
   /* Estilos para la sección de ubicación */
-  .seccionMapa img {
+  .seccionMapa {
     width: 100%; /* Asegurar que las imágenes de ubicación se ajusten a la pantalla */
     height: auto;
   }
