@@ -27,11 +27,13 @@ body
 
 .navBarImg
 {
+  
   width: 25%;
 }
 
 .navBarImg img
 {
+  
   width: 300px;
   height: 170px;
 }
@@ -64,6 +66,7 @@ body
     text-decoration: none;
     font-size: 30px;
     color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -479,7 +482,7 @@ color: #cac7ff ;
 
   /* Pantallas medianas */
 
- /*  @media (min-width: 769px) and (max-width: 1024px) {
+  @media (min-width: 769px) and (max-width: 1024px) {
     .navBarImg img {
       width: 250px;
       height: auto;
@@ -506,14 +509,12 @@ color: #cac7ff ;
     .seccionProximamenteCarta img {
       height: 100%;
     }
-  } */
+  }
 
   /* /* pantallas grandes */
   
   @media (min-width: 1025px) {
-    .navBar {
-      height: 100px;
-    }
+    
   
     .navBarImg img {
       width: 300px;
