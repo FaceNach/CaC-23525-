@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 body
 {
     margin: 0;
@@ -64,60 +67,7 @@ body
     color: #fafafa;
 }
 
-/* Sección barra de busqueda */
-.container
-{
-    width: 100%;
-    min-height: 250px;
-    background-image: linear-gradient(#351D53, #504C7E);
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-.searchBar
-{
-    width: 100%;
-    max-width: 600px;
-    background: rgba(255,255,255,0.2);
-    display: flex;
-    align-items: center;
-    border-radius: 60px ;
-    padding: 10px 20px;
-    /* backdrop-filter: blur(4px) saturate(180%); Para lo borroso de la imagen de fondo */
-}
-
-.searchBar input
-{
-background: transparent;
-flex: 1;
-border: 0;
-outline: none;
-padding-left: 24px;
-font-size: 20px;
-color: #cac7ff ;
-}
-
-.searchBar button img
-{
-    width: 25px;
-}
-.searchBar button
-{
-    border: none;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    background: #58629b;
-    cursor: pointer;
-}
-
-::placeholder
-{
-    color: #cac7ff;
-}
 
 /* Sección  Artista */
 .seccionArtista
@@ -138,6 +88,7 @@ color: #cac7ff ;
     border-style: solid;
     border-width: 1px;
     border-color: #504C7E;
+    font-family: 'Roboto', sans-serif;
 }
 
 .seccionArtista iframe 
@@ -146,6 +97,8 @@ color: #cac7ff ;
     height: 380px;
     padding-top: 22px;
 }
+
+/* Debido a politica de YT no puedo pre visualizar el video en un local Host. */
 
 /* Sección ticket */
 .seccionTicket
@@ -211,6 +164,7 @@ color: #cac7ff ;
     text-align: center;
     color: #351D53;
     font-size: 50px;
+    font-family: 'Poppins', sans-serif;
  } 
 
  /* Sección Footer */
@@ -333,3 +287,131 @@ color: #cac7ff ;
 {
     margin-top: 10px;
 }
+
+/* /* MQ */
+/* Pantallas Chicas */
+
+/* @media (max-width: 768px) {
+  .navBarImg img {
+    width: 200px;
+    height: auto;
+  }
+
+  .navBarUl ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navBarUl li a {
+    font-size: 24px;
+  }
+
+  .seccionArtista 
+  {
+    
+  }
+
+  .seccionArtista p {
+    width: 100%;
+    font-size: 18px;
+    margin: 20px;
+  }
+
+  .seccionArtista iframe {
+    width: 100%;
+    height: auto;
+  }
+
+  .button {
+    margin-right: 0;
+  }
+
+  .social-media-buttons {
+    margin-right: 0;
+  }
+
+  .H2class {
+    font-size: 36px;
+  }
+
+  .site-footer {
+    margin-top: 10px;
+  }
+
+  .container_footer {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .container_quickLinks {
+    margin-right: 0;
+  }
+}
+
+/* Pantallas medianas */
+
+/*@media (min-width: 769px) and (max-width: 1024px) {
+  .navBarImg img {
+    width: 250px;
+    height: auto;
+  }
+
+  .navBarUl li a {
+    font-size: 28px;
+  }
+
+  .seccionArtista p {
+    font-size: 20px;
+    margin: 20px;
+  }
+
+  .button {
+    margin-right: 100px;
+  }
+
+  .social-media-buttons {
+    margin-right: 50px;
+  }
+} 
+
+/* pantallas grandes */
+
+@media (min-width: 1025px) {
+  .navBar {
+    height: 100px;
+  }
+
+  .navBarImg img {
+    width: 300px;
+    height: 170px;
+  }
+
+  .navBarUl ul {
+    justify-content: space-evenly;
+  }
+
+  .navBarUl li a {
+    font-size: 30px;
+  }
+
+  .seccionArtista p {
+    width: 40%;
+    font-size: 20px;
+  }
+
+  .button {
+    margin-right: 300px;
+  }
+
+  .social-media-buttons {
+    margin-right: 100px;
+  }
+
+  .H2class {
+    font-size: 50px;
+  }
+
+  .site-footer {
+    margin-top: 30px;
+  }
+}  */

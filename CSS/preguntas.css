@@ -10,34 +10,49 @@ body {
 
 /* navBar */
 
-.navBar {
+.navBar
+{
     display: flex;
     justify-content: space-around;
-    /* padding: 10px 20px 10px 20px; */
+    flex-direction: row;
+    border-top: 2px;
+    border-right: 0px;
+    border-bottom: 2px;
+    border-left: 0px;
     border-style: solid;
-    border-color: #351D53;
-    background-color: #351D53;
+    border-color: #351D53 ;
+    background-color: #351D53 ;
     height: 150px;
     z-index: 1000;
     align-items: center;
 }
 
-.navBarImg {
-    width: 25%;
+.navBarImg
+{
+  width: 25%;
 }
 
-.navBarImg img {
-    width: 300px;
-    height: 170px;
+.navBarImg img
+{
+  
+  width: 300px;
+  height: 170px;
 }
 
+.navBarImg a 
+{
+    
+    width: 0%;
+}
 
-.navBarUl {
+.navBarUl
+{
     width: 70%;
-
+    
 }
 
-.navBarUl ul {
+.navBarUl ul
+{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -46,11 +61,13 @@ body {
     align-items: center;
 }
 
-.navBarUl li a {
+.navBarUl li a
+{
     display: flex;
     text-decoration: none;
     font-size: 30px;
     color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* main */

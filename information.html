@@ -11,56 +11,141 @@
       <nav class="navBar">
         <div class="navBarImg">
           <a href="" class=""
-            ><img src="/img/Index/HeadBar/icon3Oficial.png" alt="LogoPágina" /></a
-          ><!-- Logo  página/Home -->
+            ><img
+              src="/img/Index/HeadBar/icon3Oficial.png"
+              alt="LogoPágina" /></a
+          >
         </div>
-        <div class="navBarUl">
-          <ul>
-            <!-- <li><a href="">Contacto</a></li> -->
-            <li><a href="/index.html">Inicio</a></li>
-            <!-- se puede ir -->
-            <li><a href="information.html">Información</a></li>
-            <li><a href="/HTML/preguntas.html">Preguntas</a></li>
-            <li><a href="/formulario.html">Registrarme</a></li>
-          </ul>
-        </div>
+
+        <!--menu hamburguesa-->
+        <input
+          type="checkbox"
+          name=""
+          id="nav__checkbox"
+          class="nav__checkbox"
+        />
+        <label for="nav__checkbox" class="nav__toggle">
+          <svg class="menu" viewBox="0 0 448 512" width="100" title="bars">
+            <path
+              d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+            />
+          </svg>
+
+          <svg class="close" viewBox="0 0 384 512" width="100" title="times">
+            <path
+              d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+            />
+          </svg>
+        </label>
+
+        <ul class="nav__menu">
+          <!-- <li class="menu__logo">
+            <img src="img/Index/HeadBar/icon3Oficial.png" alt="" />
+          </li> -->
+          <!-- <li><a href="">Contacto</a></li> -->
+          <li><a href="/index.html">Inicio</a></li>
+          <li><a href="information.html">Información</a></li>
+          <li><a href="/HTML/preguntas.html">Preguntas</a></li>
+          <li><a href="/formulario.html">Registrarme</a></li>
+        </ul>
       </nav>
     </head>
-    <!-- Sección search bar -->
-    
 
     <!-- Sección locaciones bandas con ubicación -->
     <br />
     <section class="seccionUbicacion">
       <article class="seccionMapa">
-        <img src="img/Index/Estadios/EstadioMonumental.jpg" alt="Monumental" />
-        <br>
+        <img
+          src="img/Index/Estadios/Monumental/Monumental1.jpg"
+          alt="Monumental"
+        />
+        <br />
         <h3>Estadio Monumental, CABA</h3>
         <h4>Info y ubicación</h4>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d37163.6756678292!2d-58.430633983164796!3d-34.58301895049069!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1696801423854!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <h5>
+          Colectivos: 107 - 28 - 42
+          <br />
+          Tren: Belgrano Norte / Mitre
+          <br />
+          Subte: D
+        </h5>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22106.457053306636!2d-58.429533621181555!3d-34.54989653181087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb43ae6018ddf%3A0x3d7f60a75bfa308a!2sEstadio%20M%C3%A2s%20Monumental!5e0!3m2!1ses-419!2sar!4v1697472045095!5m2!1ses-419!2sar"
+          width="400"
+          height="300"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </article>
       <article class="seccionMapa">
-        <img src="img/Index/Estadios/EstadioUnicoLaPlata.jpg" alt="LaPlata" />
-        <br>
+        <img src="img/Index/Estadios/UnicoLaPlata/LaPlata3.png" alt="LaPlata" />
+        <br />
         <h3>Estadio Unico, La Plata</h3>
         <h4>Info y ubicación</h4>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3905.5232585954577!2d-58.369426949589936!3d-34.60060834688416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a335325f19f9a3%3A0xfd34b93fba734a98!2sLuna%20Park!5e0!3m2!1ses!2sar!4v1696802958223!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <h5>
+          Colectivos: 307 G - 506 41 - Este 46 - Oeste 16
+          <br />
+          Tren: Roca
+          <br />
+        </h5>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.683650510109!2d-57.99063674073877!3d-34.91493246841574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e796c35ba77f%3A0xfa546c6ec8fdfd96!2sEstadio%20Unico%20Diego%20Armando%20Maradona!5e0!3m2!1ses!2sar!4v1696803191380!5m2!1ses!2sar"
+          width="400"
+          height="300"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </article>
       <article class="seccionMapa">
-        <img src="img/Index/Estadios/LunaPark.png" alt="LunaPark" />
-        <br>
+        <img src="img/Index/Estadios/LunaPark/LunaPark1.jpg" alt="LunaPark" />
+        <br />
         <h3>Estadio Luna Park, CABA</h3>
         <h4>Info y ubicación</h4>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.683650510109!2d-57.99063674073877!3d-34.91493246841574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e796c35ba77f%3A0xfa546c6ec8fdfd96!2sEstadio%20Unico%20Diego%20Armando%20Maradona!5e0!3m2!1ses!2sar!4v1696803191380!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <h5>
+          Colectivos: 4 - 6 - 7 - 33 - 50 - 105 - 111
+          <br />
+          Tren: Belgrano Norte / Mitre
+          <br />
+          Subte: B - E
+        </h5>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1952.7318371838821!2d-58.370380865108466!3d-34.60187541754988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a335325f19f9a3%3A0xfd34b93fba734a98!2sLuna%20Park!5e0!3m2!1ses-419!2sar!4v1697487896901!5m2!1ses-419!2sar"
+          width="400"
+          height="300"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </article>
     </section>
 
     <!--Fin de seccion-->
-    <footer class="footer">
-      <div >
-        <p>Stadium Luna Park | Av. Madero 420 (C1106ABE) CABA  Argentina | </p>      
-        <p>Info Espectáculos: (011) 5278-5800 <br />Copyright 2023 Stadium Luna</p>
-        <p>Park S.R.L. | Todos los derechos reservados.</p>
+    <footer class="site-footer">
+      <div class="container2">
+        <div class="container_footer">
+          <h6>About</h6>
+          <p class="text-justify">
+            ¡Bienvenido a nuestra plataforma de eventos! Somos personas
+            apasionadas por la música, el entretenimiento y la cultura. Nuestro
+            objetivo es conectar a los amantes de los eventos con experiencias
+            inolvidables.
+          </p>
+        </div>
+
+        <div class="container_quickLinks">
+          <h6>Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="/HTML/preguntas.html">Preguntas</a></li>
+            <li><a href="/information.html">Información</a></li>
+            <li><a href="/formulario.html">Registro</a></li>
+            <li><a href="/index.html">Inicio</a></li>
+          </ul>
+        </div>
       </div>
     </footer>
   </body>
