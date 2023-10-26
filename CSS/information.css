@@ -1,11 +1,11 @@
 /*Import Google Fonts*/
-<<<<<<< HEAD
+
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
-=======
+
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200&family=Raleway:wght@300&display=swap');
->>>>>>> 68c8284a8eee1577fea2a6d7bc0a15674018c5c9
+
 
 body {
   margin: 0;
@@ -73,36 +73,13 @@ body {
   margin-top: 0.3rem;
 }
 
-/*.navBarUl {
-  width: 70%;
-}
-
-.navBarUl ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  list-style: none;
-  text-align: center;
-  align-items: center;
-}
-
-.navBarUl li a {
-  display: flex;
-  text-decoration: none;
-  font-size: 30px;
-  color: #ffffff;
-<<<<<<< HEAD
-  font-family: 'Poppins', sans-serif;
-=======
-}*/
-
 /*css menu*/
 .nav__menu {
   align-items: center;
   display: flex;
   gap: 2rem;
   margin: 1rem;
->>>>>>> 68c8284a8eee1577fea2a6d7bc0a15674018c5c9
+  flex-direction: column;
 }
 
 .nav__menu li {
@@ -315,49 +292,36 @@ img {
 @media (max-width: 1000px) {
   .navBar {
     height: auto;
-    flex-direction: column; /* Cambiar la dirección de flex para dispositivos más pequeños */
-    align-items: center;
-  }
-
-  .navBarImg {
-    width: 50%; /* Ajustar el ancho de la imagen para dispositivos más pequeños */
-    text-align: center;
-  }
-
-  .navBarImg img {
-    width: 150px; /* Ajustar el tamaño de la imagen para dispositivos más pequeños */
-    height: auto;
-  }
-
-  /*.navBarUl {
-    width: 100%;
-    margin-top: 20px; /
-
-  .navBarUl ul {
     flex-direction: column; 
     align-items: center;
   }
 
-  .navBarUl li a {
-    font-size: 24px; 
-  }*/
+  .navBarImg {
+    width: 50%;
+    text-align: center;
+  }
+
+  .navBarImg img {
+    width: 150px; 
+    height: auto;
+  }
 
   /* Estilos para la sección de búsqueda */
   .container {
-    min-height: auto; /* Reducir la altura del contenedor para dispositivos más pequeños */
+    min-height: auto; 
   }
 
   .searchBar {
-    max-width: 100%; /* Asegurar que el ancho de la barra de búsqueda se ajuste a la pantalla */
+    max-width: 100%; 
   }
 
   .searchBar input {
-    font-size: 16px; /* Ajustar el tamaño de fuente del input para dispositivos más pequeños */
+    font-size: 16px; 
   }
 
   /* Estilos para la sección de ubicación */
   .seccionMapa {
-    width: 100%; /* Asegurar que las imágenes de ubicación se ajusten a la pantalla */
+    width: 100%; 
     height: auto;
     display: flex;
     flex-direction: column;

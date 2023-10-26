@@ -44,28 +44,72 @@ body
     width: 0%;
 }
 
-.navBarUl
-{
-    width: 70%;
-    
+/*menu hamburguesa*/
+
+/*css input*/
+.nav__checkbox {
+  display: none;
+}
+/*css label*/
+.nav__toggle {
+  position: absolute;
+  cursor: pointer;
+  margin: 01rem;
+  right: 0;
 }
 
-.navBarUl ul
-{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    list-style: none;
-    text-align: center;
-    align-items: center;
+.nav__toggle svg {
+  width: 1rem;
+  fill: #FFFFFF;
 }
 
-.navBarUl li a
-{
-    display: flex;
-    text-decoration: none;
-    font-size: 30px;
-    color: #fafafa;
+.nav__toggle .close {
+  display: none;
+}
+
+.nav__toggle .close,
+.nav__toggle .menu {
+  margin-top: 0.3rem;
+}
+
+/*css menu*/
+.nav__menu {
+  align-items: center;
+  display: flex;
+  gap: 2rem;
+  margin: 1rem;
+  flex-direction: column;
+}
+
+.nav__menu li {
+  display: none;
+  list-style-type: none;
+}
+
+.nav__menu a {
+  color: #ffffff;
+  font-size: 1.1rem;
+  text-decoration: none;
+  font-family: 'Nunito Sans';
+}
+
+.menu__logo {
+  height: 150px;
+  width: 150px;
+}
+
+
+/*css interacion*/
+#nav__checkbox:checked ~ ul.nav__menu li {
+  display: block;
+}
+
+#nav__checkbox:checked ~ label.nav__toggle .close {
+  display: block;
+}
+
+#nav__checkbox:checked ~ label.nav__toggle .menu {
+  display: none;
 }
 
 /* formulario */
@@ -223,4 +267,60 @@ body
 
 .container_quickLinks li {
   margin-top: 10px;
+}
+
+
+@media (max-width: 1000px) {
+  .navBar {
+    height: auto;
+    flex-direction: column; 
+    align-items: center;
+  }
+
+  .navBarImg {
+    width: 50%;
+    text-align: center;
+  }
+
+  .navBarImg img {
+    width: 150px; 
+    height: auto;
+  }
+
+  /* Estilos para la sección de búsqueda */
+  .container {
+    min-height: auto; 
+  }
+
+  .searchBar {
+    max-width: 100%; 
+  }
+
+  .searchBar input {
+    font-size: 16px; 
+  }
+
+  /* Estilos para la sección de ubicación */
+  .seccionMapa {
+    width: 100%; 
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  } 
+}
+
+/*barra de menu*/
+@media only screen and (min-width: 1000px) { 
+  .nav__toggle {
+    display: none;
+  }
+
+  .nav__menu {
+    flex-direction: row;
+  }
+
+  .nav__menu li {
+    display: block;
+  }
 }

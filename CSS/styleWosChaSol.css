@@ -43,28 +43,72 @@ body
     width: 0%;
 }
 
-.navBarUl
-{
-    width: 70%;
-    
+/*menu hamburguesa*/
+
+/*css input*/
+.nav__checkbox {
+  display: none;
+}
+/*css label*/
+.nav__toggle {
+  position: absolute;
+  cursor: pointer;
+  margin: 01rem;
+  right: 0;
 }
 
-.navBarUl ul
-{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    list-style: none;
-    text-align: center;
-    align-items: center;
+.nav__toggle svg {
+  width: 1rem;
+  fill: #FFFFFF;
 }
 
-.navBarUl li a
-{
-    display: flex;
-    text-decoration: none;
-    font-size: 30px;
-    color: #fafafa;
+.nav__toggle .close {
+  display: none;
+}
+
+.nav__toggle .close,
+.nav__toggle .menu {
+  margin-top: 0.3rem;
+}
+
+/*css menu*/
+.nav__menu {
+  align-items: center;
+  display: flex;
+  gap: 2rem;
+  margin: 1rem;
+  flex-direction: column;
+}
+
+.nav__menu li {
+  display: none;
+  list-style-type: none;
+}
+
+.nav__menu a {
+  color: #ffffff;
+  font-size: 1.1rem;
+  text-decoration: none;
+  font-family: 'Nunito Sans';
+}
+
+.menu__logo {
+  height: 150px;
+  width: 150px;
+}
+
+
+/*css interacion*/
+#nav__checkbox:checked ~ ul.nav__menu li {
+  display: block;
+}
+
+#nav__checkbox:checked ~ label.nav__toggle .close {
+  display: block;
+}
+
+#nav__checkbox:checked ~ label.nav__toggle .menu {
+  display: none;
 }
 
 
@@ -288,110 +332,23 @@ body
     margin-top: 10px;
 }
 
-/* /* MQ */
-/* Pantallas Chicas */
-
-/* @media (max-width: 768px) {
-  .navBarImg img {
-    width: 200px;
-    height: auto;
-  }
-
-  .navBarUl ul {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .navBarUl li a {
-    font-size: 24px;
-  }
-
-  .seccionArtista 
-  {
-    
-  }
-
-  .seccionArtista p {
-    width: 100%;
-    font-size: 18px;
-    margin: 20px;
-  }
-
-  .seccionArtista iframe {
-    width: 100%;
-    height: auto;
-  }
-
-  .button {
-    margin-right: 0;
-  }
-
-  .social-media-buttons {
-    margin-right: 0;
-  }
-
-  .H2class {
-    font-size: 36px;
-  }
-
-  .site-footer {
-    margin-top: 10px;
-  }
-
-  .container_footer {
-    margin-left: 0;
-    width: 100%;
-  }
-
-  .container_quickLinks {
-    margin-right: 0;
-  }
-}
-
-/* Pantallas medianas */
-
-/*@media (min-width: 769px) and (max-width: 1024px) {
-  .navBarImg img {
-    width: 250px;
-    height: auto;
-  }
-
-  .navBarUl li a {
-    font-size: 28px;
-  }
-
-  .seccionArtista p {
-    font-size: 20px;
-    margin: 20px;
-  }
-
-  .button {
-    margin-right: 100px;
-  }
-
-  .social-media-buttons {
-    margin-right: 50px;
-  }
-} 
 
 /* pantallas grandes */
 
 @media (min-width: 1025px) {
   .navBar {
-    height: 100px;
+    height: auto;
+    align-items: center;
+  }
+
+  .navBarImg {
+    width: 50%;
+    text-align: center;
   }
 
   .navBarImg img {
-    width: 300px;
-    height: 170px;
-  }
-
-  .navBarUl ul {
-    justify-content: space-evenly;
-  }
-
-  .navBarUl li a {
-    font-size: 30px;
+    width: 150px; 
+    height: auto;
   }
 
   .seccionArtista p {
@@ -414,4 +371,19 @@ body
   .site-footer {
     margin-top: 30px;
   }
-}  */
+}
+/*barra de menu*/
+@media only screen and (min-width: 1000px) { 
+  .nav__toggle {
+    display: none;
+  }
+
+  .nav__menu {
+    flex-direction: row;
+  }
+
+  .nav__menu li {
+    display: block;
+  }
+}
+
