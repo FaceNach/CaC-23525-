@@ -87,7 +87,7 @@ body
 
 .nav__menu a {
   color: #ffffff;
-  font-size: 1.1rem;
+  font-size: 1.7rem;
   text-decoration: none;
   font-family: 'Nunito Sans';
 }
@@ -270,13 +270,7 @@ body
   background-color:#33353d
 }
 
-@media (max-width:991px)
-{
-  .site-footer [class^=col-]
-  {
-    margin-bottom:30px
-  }
-}
+
 @media (max-width:767px)
 {
   .site-footer

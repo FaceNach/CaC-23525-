@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 body 
 {
@@ -88,7 +90,7 @@ body
 
 .nav__menu a {
   color: #ffffff;
-  font-size: 1.1rem;
+  font-size: 1.7rem;
   text-decoration: none;
   font-family: 'Nunito Sans';
 }
