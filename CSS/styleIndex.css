@@ -297,6 +297,7 @@ body {
   background-image: linear-gradient(#504c7e, #351d53);
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .site-footer h6 {
@@ -393,20 +394,20 @@ body {
 
 /* MQ */
 
-@media (max-width:991px) {
-  .site-footer [class^=col-] {
-      margin-bottom: 30px
+@media (max-width: 991px) {
+  .site-footer [class^="col-"] {
+    margin-bottom: 30px;
   }
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
   .site-footer {
-      padding-bottom: 0
+    padding-bottom: 0;
   }
 
   .site-footer .copyright-text,
   .site-footer .social-icons {
-      text-align: center
+    text-align: center;
   }
 }
 
@@ -451,7 +452,7 @@ body {
 @media (max-width: 1000px) {
   .navBar {
     height: auto;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
   }
 
@@ -462,21 +463,21 @@ body {
   }
 
   .navBarImg img {
-    width: 150px; 
+    width: 150px;
     height: auto;
   }
 
   /* Estilos para la sección de búsqueda */
   .container {
-    min-height: auto; 
+    min-height: auto;
   }
 
   .searchBar {
-    max-width: 100%; 
+    max-width: 100%;
   }
 
   .searchBar input {
-    font-size: 16px; 
+    font-size: 16px;
   }
   .site-footer {
     margin-top: 10px;
@@ -493,16 +494,16 @@ body {
 
   /* Estilos para la sección de ubicación */
   .seccionMapa {
-    width: 100%; 
+    width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-  } 
+  }
 }
 
 /*barra de menu*/
-@media only screen and (min-width: 1000px) { 
+@media only screen and (min-width: 1000px) {
   .nav__toggle {
     display: none;
   }
