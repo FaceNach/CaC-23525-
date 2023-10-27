@@ -282,6 +282,7 @@ body
   .navBarImg {
     width: 50%;
     text-align: center;
+    margin-top: 0px;
   }
 
   .navBarImg img {

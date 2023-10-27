@@ -352,7 +352,7 @@ body
   .navBarImg {
     width: 50%;
     text-align: center;
-    margin-right: 400px;
+    margin-top: 0px;
   }
 
   .navBarImg img {
@@ -412,7 +412,7 @@ body
     display: block;
   }
 }
-
+}
 
 
 
