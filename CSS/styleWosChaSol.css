@@ -329,9 +329,10 @@ body
 
 /* pantallas grandes */
 
-@media (min-width: 1025px) {
+@media (max-width: 1025px) {
   .navBar {
     height: auto;
+    flex-direction:column;
     align-items: center;
   }
 
@@ -363,9 +364,19 @@ body
   }
 
   .site-footer {
-    margin-top: 30px;
+    margin-top: 10px;
+  }
+
+  .container_footer {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .container_quickLinks {
+    margin-right: 0;
   }
 }
+
 /*barra de menu*/
 @media only screen and (min-width: 1000px) { 
   .nav__toggle {
