@@ -231,10 +231,7 @@ body
   body {
       font-size: 18px;
   }
-  .navBar {
-      padding: 20px;
-  }
-  /* Ajusta otros estilos para esta pantalla */
+  
 }
 
 @media (min-width: 1025px) {
@@ -243,3 +240,4 @@ body
   }
 }
 
+/* Media query Navbar */
