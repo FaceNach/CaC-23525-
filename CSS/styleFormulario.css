@@ -224,3 +224,22 @@ body
 .container_quickLinks li {
   margin-top: 10px;
 }
+
+/*  Media query formulario */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  body {
+      font-size: 18px;
+  }
+  .navBar {
+      padding: 20px;
+  }
+  /* Ajusta otros estilos para esta pantalla */
+}
+
+@media (min-width: 1025px) {
+  body {
+      font-size: 20px;
+  }
+}
+
