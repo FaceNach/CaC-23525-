@@ -406,7 +406,7 @@ h3 {
     }
 }
 
-/* /* pantallas grandes */
+/* pantallas grandes */
 
 @media (min-width: 1025px) {
 
@@ -442,3 +442,5 @@ h3 {
         height: 100%;
     }
 }
+
+/* Media query navbar */
