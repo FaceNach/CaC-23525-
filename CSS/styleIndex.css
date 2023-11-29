@@ -495,6 +495,7 @@ color: #cac7ff ;
     .seccionBandasCarta {
       width: 250px;
       height: 300px;
+      flex-direction: column;
     }
   
     .seccionBandasCarta img {
@@ -547,5 +548,3 @@ color: #cac7ff ;
       height: 100%;
     }
   }
-   
-   

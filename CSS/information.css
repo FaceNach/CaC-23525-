@@ -1,11 +1,7 @@
 /*Import Google Fonts*/
-<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
-=======
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200&family=Raleway:wght@300&display=swap');
->>>>>>> 68c8284a8eee1577fea2a6d7bc0a15674018c5c9
 
 body {
   margin: 0;
@@ -102,7 +98,6 @@ body {
   display: flex;
   gap: 2rem;
   margin: 1rem;
->>>>>>> 68c8284a8eee1577fea2a6d7bc0a15674018c5c9
 }
 
 .nav__menu li {
